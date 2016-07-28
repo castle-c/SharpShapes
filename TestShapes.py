@@ -21,19 +21,19 @@ class TestShapes(unittest.TestCase):
 
 
   def test_circle_circumfrence(self):
-    self.assertEqual(self.shapes.test_circle(4), [25.13])
+    self.assertEqual(self.shapes.create_circle(4), 25.13)
 
   def test_square_volume(self):
-    self.assertEqual(self.shapes.test_square(4), [16])
+    self.assertEqual(self.shapes.create_square(4), 16)
 
   def test_Rhombus_area(self):
-    self.assertEqual(self.shapes.test_rhombus(4,4), [8])
+    self.assertEqual(self.shapes.create_rhombus(4,4), 8)
 
   def test_cube_surface_area(self):
-  self.assertEqual(self.shapes.test_cube(4), [96])
+    self.assertEqual(self.shapes.create_cube(4), 64)
 
   def test_cylinder_volume(self):
-    self.assertEqual(self.shapes.test_cylinder(4,4), [201.06])
+    self.assertEqual(self.shapes.create_cylinder(4,4), 200.96)
     # V=πrh
 
 
