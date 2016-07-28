@@ -17,18 +17,27 @@ class Shapes():
     user_choice = input(">")
 
     if user_choice == "1":
-       rad = int(input("Enter radius."))
+       rad = int(input("Enter radius value ."))
        self.create_circle(rad)
 
     if user_choice == "2":
-       base = int(input("Enter base."))
-       height = int(input("Enter height. "))
+       base = int(input("Enter base value."))
+       height = int(input("Enter height value. "))
        self.create_square(base, height)
 
     if user_choice == "3":
-       diag1 = int(input("Enter Diagonal p. "))
-       diag2= int(input("Enter Diagnonal q. "))
+       diag1 = int(input("Enter Diagonal value. "))
+       diag2= int(input("Enter Diagnonal value. "))
        self.create_rhombus(diag1, diag2)
+
+    if user_choice == "4":
+       edge = int(input("Enter edge value."))
+       self.create_cube(edge)
+
+    if user_choice == "5":
+       rads = int(input("Enter radius value. "))
+       heights = int(input("Enter height value. "))
+       self.create_cylinder(rads, heights)
 
     if user_choice != "6":
        self.show_menu()
